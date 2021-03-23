@@ -56,6 +56,7 @@ Version: 1.5
 html {
   height: 100%;
 }
+
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -363,6 +364,23 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 50px 30px 42px;
+}
+
+ .fxt-bg-img {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .fxt-template-layout1 .fxt-bg-img {
   min-height: 100vh;

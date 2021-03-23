@@ -97,13 +97,22 @@ class SignUpForm extends Component {
               <div className="col-md-6 col-12 fxt-bg-wrap">
                 <div
                   className="fxt-bg-img"
-                  data-bg-image="img/figure/bg4-l.jpg"
-                  //   style={{
-                  //     backgroundImage: "url ('img/figure/bg4l.jpg)",
-                  //   }}
+                  data-bg-image="img/figure/bg4ll.jpg"
+                  style={{ padding: "0" }}
                 >
+                  <img
+                    src="img/figure/main-image.jpg"
+                    style={{
+                      // marginBottom: "2%",
+                      width: "88%",
+                      // filter: "blur(1px)",
+                    }}
+                  />
                   <div className="fxt-header">
-                    <div class="fxt-transformY-50 fxt-transition-delay-1">
+                    <div
+                      class="fxt-transformY-50 fxt-transition-delay-1"
+                      style={{ marginTop: "-150%" }}
+                    >
                       <a href="login-4.html" class="fxt-logo">
                         <img src="img/logo-4.png" alt="Logo" />
                       </a>
@@ -111,7 +120,10 @@ class SignUpForm extends Component {
                     <div className="fxt-transformY-50 fxt-transition-delay-2">
                       <h1>Farmers Investors Connect</h1>
                     </div>
-                    <div className="fxt-transformY-50 fxt-transition-delay-3">
+                    <div
+                      className="fxt-transformY-50 fxt-transition-delay-3"
+                      style={{ paddingLeft: "2%", paddingRight: "2%" }}
+                    >
                       <p>
                         This is a platform that will help connecting farmers and
                         investors so that we can overcome the funding problem
