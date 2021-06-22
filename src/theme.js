@@ -12,7 +12,7 @@ const theme = createMuiTheme({
       main: "#F5436E",
     },
     background: {
-      default: "#EEEEEE",
+      default: "#fff",
     },
   },
 });
