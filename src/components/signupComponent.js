@@ -88,7 +88,7 @@ class SignUpForm extends Component {
   };
 
   render() {
-    const { data, errors, open, status } = this.state;
+    const { data, errors } = this.state;
     return (
       <>
         <section className="fxt-template-animation fxt-template-layout4">
@@ -100,21 +100,21 @@ class SignUpForm extends Component {
                   data-bg-image="img/figure/bg4ll.jpg"
                   style={{ padding: "0" }}
                 >
-                  <img
+                  {/* <img
                     src="img/figure/main-image.jpg"
                     style={{
                       // marginBottom: "2%",
                       width: "88%",
                       // filter: "blur(1px)",
                     }}
-                  />
+                  /> */}
                   <div className="fxt-header">
                     <div
                       class="fxt-transformY-50 fxt-transition-delay-1"
-                      style={{ marginTop: "-150%" }}
+                      // style={{ marginTop: "-150%" }}
                     >
                       <a href="login-4.html" class="fxt-logo">
-                        <img src="img/logo-4.png" alt="Logo" />
+                        {/* <img src="img/logo-4.png" alt="Logo" /> */}
                       </a>
                     </div>
                     <div className="fxt-transformY-50 fxt-transition-delay-2">
@@ -290,7 +290,7 @@ class SignUpForm extends Component {
                   <div className="fxt-footer">
                     <p>
                       Have an account?
-                      <a href="#" className="switcher-text2 inline-text">
+                      <a href="/smh" className="switcher-text2 inline-text">
                         Sign In
                       </a>
                     </p>
