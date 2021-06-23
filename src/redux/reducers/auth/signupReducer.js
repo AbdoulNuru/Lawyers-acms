@@ -3,7 +3,7 @@ import {
   SIGNUP_SUCCESS,
   SIGNUP_FAILURE,
   CLOSE_MESSAGE,
-} from "../types/signUpTypes";
+} from "../../types/authTypes";
 
 const initialState = {
   loading: "none",

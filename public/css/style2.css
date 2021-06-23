@@ -83,6 +83,7 @@
 }
 .fxt-template-layout27 .fxt-header {
   text-align: center;
+  margin-top: -12%;
   margin-bottom: 60px;
 }
 .fxt-template-layout27 .fxt-logo {
@@ -119,6 +120,10 @@
 .fxt-template-layout27 .fxt-form .form-group {
   position: relative;
   z-index: 1;
+}
+.errorLabel {
+  color: #b74133;
+  padding-left: 4px;
 }
 .fxt-template-layout27 .fxt-form .form-group .field-icon {
   position: absolute;
@@ -200,6 +205,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: -7%;
 }
 @media only screen and (max-width: 575px) {
   .fxt-template-layout27 .fxt-switcher-wrap {
@@ -446,4 +452,162 @@
   + label::before {
   background-color: #e9b102;
   border-color: #e9b102;
+}
+
+/*========================================================================
+34. Otp Layout One
+=========================================================================*/
+.fxt-otp-layout1 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  padding: 15px;
+}
+.fxt-otp-layout1 .fxt-bg-color {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.07);
+}
+.fxt-otp-layout1 .fxt-content {
+  padding: 65px 90px 45px;
+  width: 100%;
+  background-color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .fxt-otp-layout1 .fxt-content {
+    padding: 65px 30px 45px;
+  }
+}
+.fxt-otp-layout1 .fxt-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.fxt-otp-layout1 .fxt-header .fxt-logo {
+  display: block;
+  margin-bottom: 50px;
+  max-width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fxt-otp-layout1 .fxt-header .fxt-otp-logo {
+  margin-bottom: 20px;
+  display: block;
+}
+.fxt-otp-layout1 .fxt-header h2 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.fxt-otp-layout1 .fxt-header p {
+  color: #999898;
+}
+.fxt-otp-layout1 .fxt-header p span {
+  display: block;
+}
+.fxt-otp-layout1 .fxt-form {
+  text-align: center;
+}
+.fxt-otp-layout1 .fxt-form .form-control {
+  text-align: center;
+  font-size: 20px;
+  min-height: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #e7e7e7;
+  padding: 10px 15px;
+  color: #111;
+}
+.fxt-otp-layout1 .fxt-form .fxt-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.fxt-otp-layout1 .fxt-form .fxt-form-row .fxt-form-col {
+  margin-right: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.fxt-otp-layout1 .fxt-form .fxt-form-row .fxt-form-col:last-child {
+  margin-right: 0;
+}
+.fxt-otp-layout1 .fxt-form .fxt-form-btn {
+  width: 100%;
+}
+.fxt-otp-layout1 .fxt-btn-fill {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #80b500;
+  padding: 10px 36px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.fxt-otp-layout1 .fxt-btn-fill:hover {
+  background-color: #6e960a;
+  border-color: #6e960a;
+}
+.fxt-otp-layout1 .fxt-btn-fill:focus {
+  outline: none;
+}
+.fxt-otp-layout1 .fxt-footer {
+  text-align: center;
+}
+.fxt-otp-layout1 .fxt-footer p {
+  color: #999898;
+  margin-bottom: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.fxt-otp-layout1 .fxt-footer .fxt-btn-resend {
+  margin-left: 3px;
+  box-shadow: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  color: #63bbff;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+.fxt-otp-layout1 .fxt-footer .fxt-btn-resend:focus {
+  outline: none;
+}
+.fxt-otp-layout1 .fxt-footer .fxt-btn-resend:hover {
+  color: #000000;
+}
+.fxt-otp-layout1 .fxt-footer .text-or {
+  margin-left: 3px;
+  color: #000000;
 }
