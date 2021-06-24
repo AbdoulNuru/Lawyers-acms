@@ -6,6 +6,9 @@ import {
   VERIFY_REQUEST,
   VERIFY_SUCCESS,
   VERIFY_FAILURE,
+  RESEND_REQUEST,
+  RESEND_SUCCESS,
+  RESEND_FAILURE,
   CLOSE_MESSAGE,
 } from "../../types/authTypes";
 
@@ -46,16 +49,17 @@ export const verifyAccount = (data, history) => async (dispatch) => {
 
 export const resendOtp = (data, history) => async (dispatch) => {
   try {
-    dispatch(verifyRequest());
-    const application = await axios.post(`/resend-otp`, data);
-    dispatch(verifySuccess({ data: application }));
+    dispatch(resendRequest());
+    const res = await axios.post(`/resend-otp`, data);
+    const application = await res.data;
+    dispatch(resendSuccess({ data: application.data }));
     history.push("/otp");
   } catch (err) {
     if (err.response) {
       const errorMessage = await err.response.data.error;
-      dispatch(verifyFailure(errorMessage));
+      dispatch(resendFailure(errorMessage));
     } else {
-      dispatch(verifyFailure("Network Error"));
+      dispatch(resendFailure("Network Error"));
     }
   }
 };
@@ -94,6 +98,25 @@ export const verifySuccess = (application) => {
 export const verifyFailure = (error) => {
   return {
     type: VERIFY_FAILURE,
+    payload: error,
+  };
+};
+
+export const resendRequest = () => {
+  return {
+    type: RESEND_REQUEST,
+  };
+};
+
+export const resendSuccess = (application) => {
+  return {
+    type: RESEND_SUCCESS,
+    payload: application,
+  };
+};
+export const resendFailure = (error) => {
+  return {
+    type: RESEND_FAILURE,
     payload: error,
   };
 };

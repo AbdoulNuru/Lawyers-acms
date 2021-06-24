@@ -30,7 +30,7 @@ const Otp = (props) => {
     },
     onResend = async (e) => {
       e.preventDefault();
-      await props.resendOTP({ email });
+      await props.resendOTP({ email }, props.history);
     },
     handleClose = () => {
       setOpen(false);
