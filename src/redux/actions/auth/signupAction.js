@@ -34,9 +34,16 @@ export const verifyAccount = (data, history) => async (dispatch) => {
     dispatch(verifyRequest());
     const res = await axios.post(`/verify-account`, data);
     const application = await res.data;
+    const from = localStorage.getItem("from-login");
     dispatch(verifySuccess({ data: application.data }));
     localStorage.removeItem("verify-email");
-    history.push("/done");
+
+    if (from) {
+      history.push("/login");
+      localStorage.removeItem("from-login");
+    } else {
+      history.push("/done");
+    }
   } catch (err) {
     if (err.response) {
       const errorMessage = await err.response.data.error;
