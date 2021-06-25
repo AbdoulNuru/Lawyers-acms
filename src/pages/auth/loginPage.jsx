@@ -120,6 +120,16 @@ const Login = (props) => {
               </div>
             </form>
           </div>
+          <div className="fxt-footer">
+            <div className="fxt-transformY-50 fxt-transition-delay-7">
+              <p>
+                Haven't verified your account? <span></span>
+                <Link to="/request-verification" style={{ color: "#80B500" }}>
+                  Verify
+                </Link>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <Snackbar
