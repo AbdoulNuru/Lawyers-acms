@@ -2,7 +2,7 @@ import React from 'react';
 
 const Register = () => {
     return(
-        <h1>Hello</h1>
+        <h1>This will be the landing page</h1>
     )
 }
 
