@@ -1,20 +1,9 @@
 {
-<<<<<<< HEAD
   "name": "lawyers-acms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "loose-envify": "^1.4.0",
-    "js-tokens": "^4.0.0",
-    "object-assign": "^4.1.1",
-    "react": "^17.0.2",
-=======
-  "name": "farmers-investors-connect-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
->>>>>>> f19ff17a377820e29601284d314db312b8467865
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
@@ -23,14 +12,10 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
-<<<<<<< HEAD
-=======
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^1.0.4",
-    "jsonwebtoken": "^8.5.1",
-    "react": "^16.13.1",
->>>>>>> f19ff17a377820e29601284d314db312b8467865
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "react": "16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
@@ -40,7 +25,6 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^6.1.2",
-<<<<<<< HEAD
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
@@ -55,20 +39,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-=======
-    "redux-thunk": "^2.3.0",
-    "validator": "^13.5.2"
-  },
-  "scripts": {
-    "start": "node server",
-    "start:dev": "react-scripts start",
->>>>>>> f19ff17a377820e29601284d314db312b8467865
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src"
   },
-<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AbdoulNuru/Lawyers-acms.git"
@@ -79,8 +54,6 @@
     "url": "https://github.com/AbdoulNuru/Lawyers-acms/issues"
   },
   "homepage": "https://github.com/AbdoulNuru/Lawyers-acms#readme",
-=======
->>>>>>> f19ff17a377820e29601284d314db312b8467865
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -95,18 +68,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.20.0",
-    "prettier": "^2.0.5"
->>>>>>> f19ff17a377820e29601284d314db312b8467865
   }
 }
